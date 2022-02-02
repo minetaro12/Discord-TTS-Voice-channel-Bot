@@ -3,6 +3,7 @@
     "discordToken": "",
     "voiceTextApiKey": ""
   },
+  "notifyChannelId": "",
   "Prefix": "/",
   "AutoRestart": true,
   "ReadMe": false,
