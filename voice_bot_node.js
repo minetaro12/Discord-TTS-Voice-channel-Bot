@@ -41,7 +41,6 @@ let timeout = timeoutOffset;
 const readConfig = () => {
     discordToken = config.get('Api.discordToken');
     voiceTextApiKey = config.get('Api.voiceTextApiKey');
-    notifyChannelId = config.get('notifyChannelId')
     prefix = config.get('Prefix');
     urlReplaceText = config.get('UrlReplaceText');
     autoRestart = config.get('AutoRestart');
@@ -387,22 +386,4 @@ client.on('message', (message) => {
         console.log('読み上げ対象外のチャットです');
     }
 
-});
-
-client.on("voiceStateUpdate",  (oldState, newState) => {
-    if(newState && oldState){
-
-        if(oldState.channelID===null && newState.channelID != null){
-            //接続したとき
-            client.channels.cache.get(notifyChannelId).send('VCにメンバーが参加しました');
-            console.log(`connect`);
-        }
-        
-        if(oldState.channelID !=null && newState.channelID === null){
-            //切断したとき
-            client.channels.cache.get(notifyChannelId).send('VCからメンバーが退出しました');
-            console.log(`disconnect`);
-        }
-        
-    }
 });

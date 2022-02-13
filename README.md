@@ -73,8 +73,6 @@ configフォルダ内のdefault.jsonがコンフィグファイルです。
 | prefixes  |  読み上げから除外する接頭語  |
 | bots  |  Botを読み上げから除外する  |
 
-※入退室ログを読み上げるには`ReadMe`をtrueに、`bots`をfalseにします
-
 # Botのコマンドリスト
 
 | 接頭語+α | 内容・説明  |
