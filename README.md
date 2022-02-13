@@ -33,7 +33,6 @@ configフォルダ内のdefault.jsonがコンフィグファイルです。
     "discordToken": "",
     "voiceTextApiKey": ""
   },
-  "notifyChannelId": "",
   "Prefix": "/",
   "AutoRestart": true,
   "ReadMe": false,
@@ -61,7 +60,6 @@ configフォルダ内のdefault.jsonがコンフィグファイルです。
 | ------------ | ------------ |
 | discordToken  |  Discordのトークンを記入 |
 | voiceTextApiKey | VoiceTextのAPIキーを記入  |
-| notifyChannelId | 入退室ログを送信するチャンネルのIDを入力(まだ一つのサーバーでしか動きません) |
 | Prefix  |  コマンドの接頭語を決めます |
 | AutoRestart  |  予期せぬエラー時に自動でボイスチャンネルへ再接続すかどうか |
 | ReadMe  |  このBotが送るメッセージを読み上げるかどうか |
